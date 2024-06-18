@@ -9,5 +9,15 @@
     <button onclick="onRead()">Read Product</button>
     
 </body>
-<script src="./scrript.js"></script>
+<script>
+
+// Read data
+
+async function onRead(){
+    let data = await fetch('https://crud.teamrabbil.com/api/v1/ReadProduct');
+    let JsonData = await data.json();
+    console.log(JsonData);
+}
+
+</script>
 </html>

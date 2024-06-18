@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="onRead()">Create</button>
+    <button onclick="onDelete()">Create</button>
 
 
 
@@ -15,7 +15,7 @@
 
     <script>
 
-        async function onRead(){
+        async function onDelete(){
             let url = "https://crud.teamrabbil.com/api/v1/CreateProduct";
             const myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
